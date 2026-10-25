@@ -1,0 +1,78 @@
+==================================================
+SEO VE WEB ANALİTİĞİ DERSİ - KONTROL NOTLARI VE CEVAPLAR
+Proje: Mavi Fırın Web Sitesi
+==================================================
+
+--------------------------------------------------
+1. HAFTA: SEO ve Web Sitesini Tanıma
+--------------------------------------------------
+[H01-U1] Bir Aramayı Yorumlayın ("Eskişehir tam buğday ekmeği"):
+Kullanıcı ürün bilgisi, bulunabilirlik ve işletme adresini görmek ister; bu bilgiler ana veya ürün sayfasında açıkça yer almalıdır.
+
+[H01-S1] "Yakınımdaki fırın" Araması:
+Bu arama için konum, adres, çalışma saatleri ve iletişim/ulaşım bilgisi öne çıkmalıdır.
+
+[H01-U2] Site Sayfaları:
+Sitede yer alan sayfalar: index.html, urunler.html, hakkimizda.html, iletisim.html.
+
+[H01-S2 & S3] Sayfa Amaçları:
+- index.html (Ana Sayfa): Sitenin başlangıç sayfası, genel tanıtım ve yönlendirme.
+- urunler.html (Ürünler): Ekmek ve unlu mamul çeşitlerinin listelenmesi.
+- hakkimizda.html (Hakkımızda): İşletmenin hikayesi ve felsefesi.
+- iletisim.html (İletişim): Fırının açık adresi, telefon ve ulaşım bilgileri.
+
+[H01-U3] Google Arama Sonuç Taslağı (Snippet):
+Başlık: "Mavi Fırın | Eskişehir Taze Ekmek"
+Açıklama: "Günlük ekmek çeşitlerini ve adresimizi keşfedin."
+
+[H01-S3] Ürünler Sayfası Sonuç Taslağı:
+Başlık: "Ekmek Çeşitleri | Mavi Fırın"
+Açıklama: "Tam buğday, ekşi mayalı ekmek ve taze unlu mamul çeşitlerimizi keşfedin."
+
+[H01-U4] Kontrol Listesi (İlk 3 Bilgi):
+Ziyaretçinin sitede ilk görmek isteyeceği 3 bilgi: Ürünler, adres/iletişim bilgileri ve işletme hakkında kısa özet bilgi.
+
+[H01-S4] Eksik Bilgi Önerisi:
+Sitede yer alması faydalı olabilecek ek bilgiler: Güncel çalışma saatleri, ürün fiyatları ve ürün fotoğrafları.
+
+
+--------------------------------------------------
+2. HAFTA: HTML, CSS ve Sayfa Yapısı
+--------------------------------------------------
+[H02-U1 & S1] H1 Başlık Güncellemesi:
+index.html içindeki ana başlık daha bilgilendirici hale getirilerek "Mavi Fırın | Eskişehir Taze Ekmek" olarak güncellendi.
+
+[H02-U2 & S2] Sayfa Bağlantıları:
+index.html üzerine urunler.html ("Ürünleri Gör") ve hakkimizda.html ("Hakkımızda") bağlantıları eklendi.
+
+[H02-U3 & S3] CSS Düzenlemeleri:
+- style.css içinde h1 etiketi için "#163b65" rengi tanımlandı.
+- Tüm bağlantıların altının çizili olması için "a { text-decoration: underline; }" kuralı eklendi.
+
+[H02-U4 & S4] Mobil Test ve Taşan Öğe Kontrolü:
+Tarayıcı penceresi daraltılarak yapılan mobil görünüm testinde metinlerin ekrana sığdığı ve rahatlıkla okunduğu, bağlantıların tıklanabilir kaldığı gözlemlendi. Sayfada yatay kaydırma (scroll) oluşturan taşan herhangi bir öğe bulunmamaktadır (taşma durumlarında sabit genişlikler kaldırılmalı veya max-width: 100% kullanılmalıdır).
+
+
+--------------------------------------------------
+3. HAFTA: GitHub Pages ile Ücretsiz Yayınlama
+--------------------------------------------------
+[H03-U1] Depo Açma:
+GitHub üzerinde "mavi-firin" adlı Public (herkese açık) bir repository oluşturuldu.
+
+[H03-S1] GitHub Repo Açıklaması:
+"SEO dersi için örnek Türkçe fırın web sitesi."
+
+[H03-U2] Dosyaların Yüklenmesi:
+index.html, style.css ve diğer sayfalar ana dizinde (root) olacak şekilde commit edildi.
+
+[H03-S2] Commit Mesajı:
+"Ana sayfa başlığı güncellendi"
+
+[H03-U3] GitHub Pages Yayını:
+Settings > Pages > Deploy from a branch > main > /(root) adımları tamamlandı ve site https:// üzerinden yayına alındı.
+
+[H03-U4] CSS Hatası İncelemesi:
+Site açılıyor ancak CSS yüklenmiyorsa/görünmüyorsa, ilk olarak HTML içindeki CSS dosya yolu (<link href="style.css">) ve dosya adındaki büyük/küçük harf ile yazım hataları incelenmelidir.
+
+[H03-S4] 404 Bağlantı Hatası İncelemesi:
+Ürün bağlantısı veya herhangi bir sayfa 404 veriyorsa, hedef dosya adı ile href değerinin (ör. urunler.html) birebir aynı yazılıp yazılmadığı kontrol edilmelidir.
